@@ -2,6 +2,7 @@ import md5 from 'md5';
 import type {NextApiRequest, NextApiResponse} from 'next';
 import { connectDB } from '../../middlewares/connectDB';
 import { UserModel } from '../../models/UserModel';
+import { DefaultResponseMsg } from '../../types/DefaultResponseMsg';
 
 type CadastroRequest = {
     name: string,
@@ -9,7 +10,7 @@ type CadastroRequest = {
     password: string
 }
 
-const handler = async (req : NextApiRequest, res: NextApiResponse) =>{
+const handler = async (req : NextApiRequest, res: NextApiResponse<DefaultResponseMsg>) =>{
     try{
         if(req.method !== 'POST'){
             return res.status(405).json({error: 'Metodo solicitado não existe'});
