@@ -5,14 +5,14 @@ export const Login : NextPage = () =>{
 
     return (
         <div>
-            <img />
+            <img src='/logo.svg' alt='Logo Fiap'/>
             <div className="form">
                 <div>
-                    <img /> 
+                    <img src='/mail.svg' alt='Login'/> 
                     <input type="text" placeholder="Login" />
                 </div>
                 <div>
-                    <img /> 
+                    <img src='/lock.svg' alt='Senha'/> 
                     <input type="password" placeholder="Senha" />
                 </div>
                 <button type='button'>Login</button>
