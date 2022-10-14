@@ -4,8 +4,8 @@ import { Component } from 'react';
 export const Login : NextPage = () =>{
 
     return (
-        <div>
-            <img src='/logo.svg' alt='Logo Fiap'/>
+        <div className='container-login'>
+            <img src='/logo.svg' alt='Logo Fiap' className='logo'/>
             <div className="form">
                 <div>
                     <img src='/mail.svg' alt='Login'/> 
