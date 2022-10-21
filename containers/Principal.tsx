@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type {NextPage} from 'next';
 import { useState } from 'react';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { executeRequest } from '../services/api';
 
@@ -18,6 +19,7 @@ export const Principal : NextPage<PrincipalProps> = ({setAccessToken}) =>{
     return (
         <>
             <Header sair={sair}/>
+            <Footer />
         </>
     );
 }
